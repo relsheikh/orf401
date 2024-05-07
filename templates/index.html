@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WheelsUnited - Car Sharing</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="{% static 'main.css' %}" rel="stylesheet">
+</head>
+<body>
+ 
+ <header class="header">
+    <h1>WheelsUnited</h1>
+    <p>Travel far, together.</p>
+    <a href="/rides" class="btn-bgstroke">Get a Ride Now</a>
+    <a href="/rides/form" class="btn-bgstroke">Create a Ride</a> <!-- New button for creating a ride -->
+  </header>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+          <div>
+            <a href="https://www.amazon.com/Real-Case-Driverless-Mobility-Vehicles/dp/0443236852" target="_blank" rel="noopener noreferrer"><img src="{% static 'carshare.png' %}" width="500" height="300" class="img-fluid"></a>
+          </div>
+        <div class="m-4 fw-bold h1 custom-primary-text">Welcome to WheelsUnited!</div>
+        <div class="m-4 h4 fw-normal">
+          At WheelsUnited, we strive to comfortably connect people with rides going or coming from your exact location. By allowing you to find similarities such that you're comfortable sharing a ride, we're empowering you. Going to an event? Find someone who's traveling there and ride with them. It's that simple. Travel far, together.
+        </div>
+        <a href="/rides" class="btn-custom-primary">Find a Ride</a>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <script src="{% static 'main.js' %}"></script>
+</body>
+</html>

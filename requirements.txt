@@ -1,0 +1,6 @@
+gunicorn
+dj-database-url
+Django
+psycopg2-binary
+whitenoise
+openai==1.13.3
